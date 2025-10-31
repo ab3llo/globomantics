@@ -25,6 +25,14 @@
     --button-primary-hover: #ccc;
     --button-secondary-hover: #1a1a1a;
   }
+
+  .ul {
+    display: flex;
+  }
+
+  .li {
+    list-style: none;
+  }
 }
 
 .main {
