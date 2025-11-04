@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inconsolata } from 'next/font/google';
 import styles from './root.module.css';
 import Link from 'next/link';
+import globalStyles from './globals.css';
 
 const inconsolata = Inconsolata({
   weight: ['400', '700'],
@@ -21,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inconsolata.className}>
+      <body className={globalStyles + ' ' + inconsolata.className}>
         <header className={styles.header}>
           <h1 className={styles.homeLink}>
             <Link href={'/home'}>Globalmantics</Link>
